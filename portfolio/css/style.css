@@ -71,11 +71,15 @@ a:active {
   color: #64ffda;
 }
 
-main {
+/* main {
   margin-inline: 2rem;
   margin-block: 1rem;
   position: absolute;
-  /* top: 300px; */
+  /* top: 300px; 
+} */
+
+h1 {
+  font-size: 10em;
 }
 
 /* DEMO-SPECIFIC STYLES */
