@@ -35,6 +35,15 @@ header {
   width:50px;
 }
 
+.brand {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.brand span {
+  font-weight: normal;
+}
+
 .nav ul {
   display: flex;
   gap: 2rem;
@@ -63,6 +72,7 @@ main {
   margin-inline: 2rem;
   margin-block: 1rem;
   position: absolute;
+  /* top: 300px; */
 }
 
 /* DEMO-SPECIFIC STYLES */
@@ -114,6 +124,8 @@ a {
   text-decoration: none;
 }
 
+/* Scroller */
+
 article {
   width: 60%;
   margin: 2rem auto;
@@ -125,6 +137,7 @@ article>h3 {
 }
 
 /* Scroller */
+
 header.scroll-up {
   transform: translateY(0);
 }
@@ -149,9 +162,12 @@ header.scroll-down {
 .header .logo {
   display: block;
   float: left;
+  /* padding: 10px 20px;
+  text-decoration: none; */
 }
 
 /* menu */
+
 .header .menu {
   clear: both;
   max-height: 0;
@@ -159,6 +175,7 @@ header.scroll-down {
 }
 
 /* menu icon */
+
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
@@ -173,6 +190,7 @@ header.scroll-down {
   display: block;
   height: 2px;
   position: relative;
+  /* transition: background .2s ease-out; */
   width: 18px;
 }
 
@@ -196,6 +214,7 @@ header.scroll-down {
 }
 
 /* menu btn */
+
 .header .menu-btn {
   display: none;
 }
@@ -221,6 +240,8 @@ header.scroll-down {
   top: 0;
 }
 
+/* 48em = 768px */
+
 @media (min-width: 90em) {
   .header li {
     float: left;
@@ -237,8 +258,4 @@ header.scroll-down {
     display: none;
   }
 
-}
-
-h1 {
-  font-size: large;
 }
