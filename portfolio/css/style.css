@@ -6,14 +6,13 @@
   text-decoration: none;
 }
 
-
 body {
   background-color: #0A192F;
   margin: 0;
   padding-top: 5em;
   display: flex;
   justify-content: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: monospace;
   color: #8892b0;
 }
 
@@ -22,7 +21,7 @@ header {
   justify-content: space-between; */
   padding: 2rem 5rem;
   background: #0A192F;
-  
+  box-shadow: 0 1px 10px 0 rgb(0 0 0 /30%);
   color: #fff;
   position: fixed;
   top: 0;
@@ -71,21 +70,17 @@ a:active {
   color: #64ffda;
 }
 
-/* main {
+main {
   margin-inline: 2rem;
   margin-block: 1rem;
   position: absolute;
-  /* top: 300px; 
-} */
-
-h1 {
-  font-size: 10em;
+  /* top: 300px; */
 }
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
   color: #fff;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: monospace;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange;
@@ -99,7 +94,6 @@ h1 {
   animation:
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
-    
 }
 
 /* The typing effect */
@@ -132,8 +126,10 @@ a {
   text-decoration: none;
 }
 
+/* Scroller */
+
 article {
-  width: 75%;
+  width: 60%;
   margin: 2rem auto;
 }
 
@@ -146,7 +142,6 @@ article>h3 {
 
 header.scroll-up {
   transform: translateY(0);
-  box-shadow: 0 1px 10px 0 rgb(0 0 0 /30%);
 }
 
 header.scroll-down {
@@ -179,14 +174,13 @@ header.scroll-down {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
-  font-family: monospace !important;
 }
 
 /* menu icon */
 
 .header .menu-icon {
   cursor: pointer;
-  /* display: inline-block; */
+  display: inline-block;
   float: right;
   padding: 28px 20px;
   position: relative;
