@@ -185,7 +185,7 @@ header.scroll-down {
   padding: 28px 20px;
   position: relative;
   user-select: none;
-  float: right;
+  float: none;
 }
 
 .header .menu-icon .navicon {
