@@ -85,7 +85,7 @@ h1 {
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
   color: #fff;
-  font-family: 'Merriweather', serif;
+  font-family: 'Courier New', Courier, monospace;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange;
@@ -99,7 +99,7 @@ h1 {
   animation:
     typing 3.5s steps(30, end),
     blink-caret .5s step-end infinite;
-    box-shadow: 0 1px 10px 0 rgb(0 0 0 /30%);
+    
 }
 
 /* The typing effect */
@@ -132,8 +132,6 @@ a {
   text-decoration: none;
 }
 
-/* Scroller */
-
 article {
   width: 75%;
   margin: 2rem auto;
@@ -148,6 +146,7 @@ article>h3 {
 
 header.scroll-up {
   transform: translateY(0);
+  box-shadow: 0 1px 10px 0 rgb(0 0 0 /30%);
 }
 
 header.scroll-down {
