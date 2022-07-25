@@ -180,7 +180,7 @@ header.scroll-down {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
-  font-family: monospace;
+  font-family: monospace !important;
 }
 
 /* menu icon */
