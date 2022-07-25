@@ -33,6 +33,8 @@ header {
 
 #logo {
   width:50px;
+  /* padding: 0; */
+  
 }
 
 .brand {
@@ -179,7 +181,7 @@ header.scroll-down {
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
-  float: none;
+  float: right;
   padding: 28px 20px;
   position: relative;
   user-select: none;
