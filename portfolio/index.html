@@ -1,70 +1,73 @@
 <!DOCTYPE html>
 <html lang="en-US">
+    <head>
+        <title> KC Marie | Web Enthusiast </title>
 
-<head>
-    <title> KC Marie | Web Enthusiast </title>
+        <link rel="shortcut icon" href="img/m.png" />
+        <link rel="stylesheet" type="text/css" title="Preferred" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,700&family=Roboto:wght@300&family=Square+Peg&display=swap"
+            rel="stylesheet">
 
-    <link rel="shortcut icon" href="img/icon/favicon.png" />
-    <link rel="stylesheet" type="text/css" title="Preferred" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="author" content="KC Arce">
+        <meta name="description" content="Personal Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
-    <meta charset="UTF-8">
-    <meta name="author" content="KC Arce">
-    <meta name="description" content="Personal Website">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <body>
+        <header class="header">
+            <a href="index.html" class="logo"><img src="img/m.png" alt="Logo" id="logo"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a class="active" href="index.html"><span class="green">01.</span> Homejkj</a></li>
+                <li><a href="html/about.html" aria-haspopup="true"><span class="green">02.</span> About</a></li>
+                <li><a href="html/interests.html"><span class="green">03.</span> Research Interests</a></li>
+                <li><a href="html/randomfacts.html"><span class="green">04.</span> Random Facts</a></li>
+                <li><a href="html/work.html"><span class="green">05.</span> Experience</a></li>
+                <li><a href="html/projects.html"><span class="green">06.</span> Projects</a></li>
+                <li><a href="html/contact.html"><span class="green">07.</span> Contact</a></li>
+            </ul>
+        </header>
 
-<body>
-    <!-- <header class="header">
-        <a href="index.html" class="logo"><img src="img/m.png" alt="Logo" id="logo"></a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-            <li><a class="selected" href="index.html"><span class="green">01.</span> Home</a></li>
-            <li><a href="html/about.html" aria-haspopup="true"><span class="green">02.</span> About</a></li>
-            <li><a href="html/interests.html"><span class="green">03.</span> Research Interests</a></li>
-            <li><a href="html/randomfacts.html"><span class="green">04.</span> Random Facts</a></li>
-            <li><a href="html/work.html"><span class="green">05.</span> Experience</a></li>
-            <li><a href="html/projects.html"><span class="green">06.</span> Projects</a></li>
-            <li><a href="html/contact.html"><span class="green">07.</span> Contact</a></li>
-        </ul>
-    </header> -->
-    <ul>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-      
-      <div style="margin-left:25%;padding:1px 16px;height:1000px;">
-        <h2>Fixed Full-height Side Nav</h2>
-        <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
-        <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
-        <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
-        <p>Some text..</p>
-        <p>Some text..</p>
-        <p>Some text..</p>
-        <p>Some text..</p>
-        <p>Some text..</p>
-        <p>Some text..</p>
-        <p>Some text..</p>
-      </div>
-
-    <main>
-        <div class="typewriter">
-            <h1>Hi, <span class="green">KC Marie </span>here.</h1>
-        </div>
-        <article>
+        <main>
+            <div id="page-container">
+                <article>
+                    <div class="typewriter">
+                        <h1>Hi, <span class="green">KC Marie </span>here.</h1>
+                    </div>
+                    <h1 class="big-heading paragraph">Currently exploring the world of IT.</h1>
+                    <div class="paragraph">
+                        <p>
+                            Greetings! I am KC Marie Arce, 27 years old and from the Philippines,
+                            currently residing in Sydney as an international student and taking up
+                            Master of Information Technology at <span class="green">King's Own Institute</span>.
+                        </p>
+    
+                        <p>
+                            I am hopeful of becoming a web designer/developer and systems analyst in the
+                            future providing a fresh take and an extraordinary approach to every project.
+                        </p>
+                    </div>
+                </article>
+                
+                <article>
+                    <div id="downloadbtn">
+                        <a class="download" href="#" target="_blank" download>Click to view my resumé</a>
+                    </div>
+                </article>
+            </div>
             
-            <p>
-                Hi, I am KC Marie. A 25 year old international student from the Philippines.
-            <p>I am hopeful of becoming a web designer/developer and systems analyst in the future.</p>
+            
+            <footer>
+                <p>All Rights Reserved &copy; 2022</p>
+                <p>Designed and Built by KC Marie Arce</p>
+            </footer>
+        </main>
 
-            </p>
-        </article>
-    </main>
-
-    <script src="js/main.js"></script>
-</body>
-
+        <script src="js/main.js"></script>
+    </body>
 </html>
