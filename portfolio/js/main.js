@@ -1,3 +1,4 @@
+// Menu Scroller
 const body = document.body;
 const header = document.querySelector("header");
 const main = document.querySelector("main");
@@ -10,9 +11,6 @@ let lastScroll = 0;
 window.addEventListener("scroll", () => {
     let currentScroll = window.pageYOffset;
 
-    // console.log("current: ", currentScroll);
-    // console.log("last: ", lastScroll);
-
     if (currentScroll - lastScroll > 0) {
         // scrolled down -- header hide
         header.classList.add("scroll-down");
@@ -24,10 +22,9 @@ window.addEventListener("scroll", () => {
     }
 
     lastScroll = currentScroll;
-    // console.log("last: ", lastScroll);
-
 })
 
+// Project Gallery
 let pic = document.querySelectorAll(".pic");
 
 pic.forEach(e => {
@@ -79,51 +76,14 @@ function showSlide(n) {
   modalPreviews[slideIndex - 1].className += ' active';
 }
 
+// Contact Form
+document.querySelector('#contact-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    e.target.elements.name.value = '';
+    e.target.elements.email.value = '';
+    e.target.elements.message.value = '';
+  });
 
-
-
-
-
-// var slideIndex = 1;
-// showSlide(slideIndex);
-
-// function openLightbox() {
-//   document.getElementById('Lightbox').style.display = 'block';
-//   document.getElementsByTagName("nav").style.top = "-50px";
-// }
-
-// function closeLightbox() {
-//   document.getElementById('Lightbox').style.display = 'none';
-// }
-
-// function changeSlide(n) {
-// 	showSlide(slideIndex += n);
-// }
-
-// function toSlide(n) {
-// 	showSlide(slideIndex = n);
-// }
-
-// function showSlide(n) {
-
-//   const slides = document.getElementsByClassName('slide');
-//   let modalPreviews = document.getElementsByClassName('modal-preview');
-
-//   if (n > slides.length) {
-//     slideIndex = 1;	
-//   }
-  
-//   if (n < 1) {
-//   	slideIndex = slides.length;
-//   }
-
-//   for (let i = 0; i < slides.length; i++) {
-//       slides[i].style.display = "none";
-//   }
-//   for (let i = 0; i < modalPreviews.length; i++) {
-//       modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
-//   }
-  
-//   slides[slideIndex - 1].style.display = 'block';
-//   modalPreviews[slideIndex - 1].className += ' active';
-// }
+  function myFunc(e){
+    e.preventDefault();
+}

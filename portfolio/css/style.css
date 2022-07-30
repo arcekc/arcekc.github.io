@@ -5,6 +5,7 @@
   --theme-lightgray: #ccd6f6;
   --theme-gray: #8892B0;
   --theme-white: #fff;
+  --green-tint: rgba(100,255,218,0.1);
 }
 
 * {
@@ -273,6 +274,10 @@ header.scroll-down {
   width: 80%;
 }
 
+#downloadbtn {
+  margin-top: 50px;
+}
+
 #downloadbtn>a, input[type=submit] {
   font-family: monospace;
   font-size: 15px;
@@ -282,10 +287,11 @@ header.scroll-down {
   color: var(--theme-accent);
   cursor: pointer;
   background-color: transparent !important;
+  
 }
 
 #downloadbtn>a:hover, input[type=submit]:hover {
-  background-color: rgba(100, 255, 218, 0.1);
+  background-color: var(--green-tint) !important;
 }
 
 /* Footer style */
@@ -307,19 +313,52 @@ footer {
 }
 
 /*Contact Form*/
-input[type=text], input[type=email], select, textarea {
+input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
 }
 
-.contact-container {
+form>label {
+  color: var(--theme-lightgray)
+}
+
+form>input[type=text], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid var(--theme-accent);
+  background-color: transparent;
+  color: var(--theme-white)
+}
+
+form>input[type=submit] {
+  margin-top: 25px;
+}
+
+input:focus, textarea:focus, select:focus{
+  outline: none;
+  background-color: var(--green-tint) !important;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px var(--green-tint) inset !important;
+  -webkit-text-fill-color: var(--theme-navy) !important;
+}
+
+.container {
   border-radius: 5px;
-  background-color: #233554;
   padding: 10px;
+}
+
+.column>img {
+  width: 100%;
 }
 
 .column {
@@ -344,7 +383,7 @@ input[type=text], input[type=email], select, textarea {
 
 /* Heading Styles */
 h2 {
-  color: #ccd6f6;
+  color: var(--theme-lightgray);
   font-size: 1rem;
   overflow: hidden;
   font-size: xx-large;
@@ -401,36 +440,25 @@ ul.skill-list li {
 
 /* Gallery */
 .lightbox {
-  /* Default to hidden */
   display: none;
-
-  /* Overlay entire screen */
   position: fixed;
   z-index: 999;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  
-  /* A bit of padding around image */
   padding: 1em;
-
-  /* Translucent background */
   background: rgba(0, 0, 0, 0.9);
 }
 
-/* Unhide the lightbox when it's the target */
 .lightbox:target {
   display: block;
 }
 
 .lightbox span {
-  /* Full width and height */
   display: block;
   width: 100%;
   height: 100%;
-
-  /* Size and position background image */
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -439,8 +467,8 @@ ul.skill-list li {
 #gallery img {
   width:  350px;
   height: 350px;
-    object-fit: cover;
-}
+  object-fit: cover;
+} /* gallery end */
 
 /* Interests style */
 section {
@@ -489,7 +517,7 @@ label[for*='4']:before {
 }
 
 label:hover {
-  color: #64ffda;
+  color: var(--theme-accent);
   background-color: rgba(17, 34, 64, 0.7);
   cursor: pointer;
 }
@@ -529,11 +557,9 @@ input:checked+label {
   padding: 50px;
   margin: 0 auto;
   background: var(--theme-navy);
-}
-/* Interests style end*/
+}/* Interests style end*/
 
 /* timeline style */
-
 .hexa:before {
   content: "";
   position: absolute;
@@ -879,4 +905,27 @@ input:checked+label {
 }
 /* Card Flip Effect end*/
 
+
+iframe{
+  border-width: 0px;
+}
+
+iframe, video {
+  width: 1050px;
+  height: 615px;
+}
+
+ul#socmed li {
+  display:inline;
+}
+
+#socmed img {
+  min-width: 30px;;
+  max-width: 25px;
+  padding-right: 15px;
+}
+
+.column>#socmed {
+  text-align: center;
+}
 
