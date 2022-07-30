@@ -5,7 +5,7 @@
   --theme-lightgray: #ccd6f6;
   --theme-gray: #8892B0;
   --theme-white: #fff;
-  --green-tint: rgba(100,255,218,0.1);
+  --green-tint: rgba(100, 255, 218, 0.1);
 }
 
 * {
@@ -73,6 +73,7 @@ a:hover {
 a:active, a.active {
   color: var(--theme-accent)
 }
+
 /* link style end*/
 
 main {
@@ -124,6 +125,7 @@ main {
     border-color: var(--theme-accent);
   }
 }
+
 /* typerwriter effect end */
 
 .green-monospace {
@@ -153,6 +155,7 @@ header.scroll-up {
 header.scroll-down {
   transform: translateY(-100%);
 }
+
 /* Scroller end*/
 
 /* header menu for smaller devices */
@@ -261,6 +264,7 @@ header.scroll-down {
   }
 
 }
+
 /* header menu for smaller devices end*/
 
 .big-heading {
@@ -287,7 +291,7 @@ header.scroll-down {
   color: var(--theme-accent);
   cursor: pointer;
   background-color: transparent !important;
-  
+
 }
 
 #downloadbtn>a:hover, input[type=submit]:hover {
@@ -303,6 +307,7 @@ footer {
   width: 100%;
   font-size: 0.75em;
 }
+
 /* Footer style end*/
 
 #page-container {
@@ -340,7 +345,7 @@ form>input[type=submit] {
   margin-top: 25px;
 }
 
-input:focus, textarea:focus, select:focus{
+input:focus, textarea:focus, select:focus {
   outline: none;
   background-color: var(--green-tint) !important;
 }
@@ -398,7 +403,9 @@ h2:after {
   margin-right: -100%;
   margin-left: 10px;
   border-top: 1px solid rgba(255, 255, 255, .25);
-}/* Heading Styles end */
+}
+
+/* Heading Styles end */
 
 .img-right {
   float: right;
@@ -465,10 +472,12 @@ ul.skill-list li {
 }
 
 #gallery img {
-  width:  350px;
+  width: 350px;
   height: 350px;
   object-fit: cover;
-} /* gallery end */
+}
+
+/* gallery end */
 
 /* Interests style */
 section {
@@ -557,7 +566,9 @@ input:checked+label {
   padding: 50px;
   margin: 0 auto;
   background: var(--theme-navy);
-}/* Interests style end*/
+}
+
+/* Interests style end*/
 
 /* timeline style */
 .hexa:before {
@@ -834,6 +845,7 @@ input:checked+label {
     text-align: left;
   }
 }
+
 /* timeline style end*/
 
 /* Card Flip Effect*/
@@ -903,10 +915,11 @@ input:checked+label {
   border-radius: 10px;
   padding: 16px;
 }
+
 /* Card Flip Effect end*/
 
 
-iframe{
+iframe {
   border-width: 0px;
 }
 
@@ -916,11 +929,12 @@ iframe, video {
 }
 
 ul#socmed li {
-  display:inline;
+  display: inline;
 }
 
 #socmed img {
-  min-width: 30px;;
+  min-width: 30px;
+  ;
   max-width: 25px;
   padding-right: 15px;
 }
@@ -929,3 +943,9 @@ ul#socmed li {
   text-align: center;
 }
 
+img#qr {
+  position: fixed;
+  right: 25px;
+  bottom: 15px;
+  width: 75px;
+}
