@@ -328,7 +328,7 @@ input[type=text], select, textarea {
 }
 
 .field {
-	margin-bottom: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 small {
@@ -337,7 +337,7 @@ small {
 }
 
 input::placeholder, textarea::placeholder {
-	color: var(--theme-gray);
+  color: var(--theme-gray);
 }
 
 form>.field>label {
@@ -347,7 +347,7 @@ form>.field>label {
 input.error,
 textarea.error,
 select.error {
-	border-color: var(--theme-error) !important;
+  border-color: var(--theme-error) !important;
 }
 
 form>.field>input[type=text], textarea {
@@ -572,6 +572,11 @@ input:checked+label {
     margin: 0;
     font-size: 18px;
   }
+
+  iframe, video {
+    width: 815px !important;
+    height: 415px !important;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -684,7 +689,7 @@ input:checked+label {
   display: inline;
   background: var(--theme-lightgray);
   font-weight: 600;
-  z-index: 15;
+  z-index: 5;
   padding: 6px 10px;
   text-align: left;
   border-radius: 5px;
@@ -709,7 +714,7 @@ input:checked+label {
   display: block;
   position: relative;
   margin: 4px 0 0 0;
-  z-index: 14;
+  z-index: 6;
   line-height: 1em;
 }
 
@@ -967,6 +972,7 @@ img#qr {
   right: 25px;
   bottom: 15px;
   width: 75px;
+  z-index: 15;
 }
 
 /* audio player */
