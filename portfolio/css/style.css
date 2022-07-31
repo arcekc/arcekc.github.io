@@ -263,7 +263,6 @@ header.scroll-down {
   .header .menu-icon {
     display: none;
   }
-
 }
 
 /* header menu for smaller devices end*/
@@ -571,11 +570,6 @@ input:checked+label {
   label:before {
     margin: 0;
     font-size: 18px;
-  }
-
-  iframe, video {
-    width: 815px !important;
-    height: 415px !important;
   }
 }
 
@@ -938,9 +932,7 @@ input:checked+label {
   transform: rotateY(180deg);
   border-radius: 10px;
   padding: 16px;
-}
-
-/* Card Flip Effect end*/
+} /* Card Flip Effect end*/
 
 
 iframe {
