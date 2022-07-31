@@ -75,15 +75,3 @@ function showSlide(n) {
   slides[slideIndex - 1].style.display = 'block';
   modalPreviews[slideIndex - 1].className += ' active';
 }
-
-// Contact Form
-document.querySelector('#contact-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    e.target.elements.name.value = '';
-    e.target.elements.email.value = '';
-    e.target.elements.message.value = '';
-  });
-
-  function myFunc(e){
-    e.preventDefault();
-}

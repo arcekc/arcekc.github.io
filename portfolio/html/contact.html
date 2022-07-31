@@ -4,12 +4,12 @@
 <head>
   <title> KC Marie | Contact </title>
 
-  <link rel="shortcut icon" href="../img/favicon/favicon.png" />
+  <link rel="shortcut icon" href="../media/img/favicon/favicon.png" />
   <link rel="stylesheet" type="text/css" title="Preferred" href="../css/style.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,700&family=Roboto:wght@300&family=Square+Peg&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="./social-media-icons.css">
+  <link rel="stylesheet" href="./social-media-icons.css">
 
   <meta charset="UTF-8">
   <meta name="author" content="KC Arce">
@@ -19,7 +19,7 @@
 
 <body>
   <header class="header">
-    <a href="../index.html" class="logo"><img src="../img/m.png" alt="Logo" id="logo"></a>
+    <a href="../index.html" class="logo"><img src="../media/img/m.png" alt="Logo" id="logo"></a>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
@@ -39,7 +39,7 @@
         <h2><span class="green-monospace">07.</span> Get In Touch</h2>
         <div class="row">
           <div class="column">
-            <img src="../img/contact-img.jpg">
+            <img src="../media/img/contact-img.jpg" alt="Kayaking">
             <p>
               If you have any questions, please feel free to drop me a line. If you don’t get an answer
               immediately, I might just be travelling through the middle of nowhere. I’ll get back to you
@@ -48,40 +48,56 @@
 
             <ul id="socmed">
               <li>
-                <a href="mailto:arcekc@gmail.com" target="_blank"><img src="../img/icon/mail.png" alt="mail"/></a>
+                <a href="mailto:arcekc@gmail.com" target="_blank"><img src="../media/img/icon/mail.png" alt="mail" /></a>
               </li>
               <li>
-                <a href="https://github.com/arcekc" target="_blank"><img src="../img/icon/github.png" alt="Github"/></a>
+                <a href="https://github.com/arcekc" target="_blank"><img src="../media/img/icon/github.png"
+                    alt="Github" /></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/arcekc" target="_blank"><img src="../img/icon/linkedin.png" alt="LinkedIn"/></a>
+                <a href="https://www.linkedin.com/in/arcekc" target="_blank"><img src="../media/img/icon/linkedin.png"
+                    alt="LinkedIn" /></a>
               </li>
-            </ul>  
+            </ul>
           </div>
           <div class="column">
             <form action="contact.html" method="POST" id="my_form">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" required>
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" required>
-              <label for="lname">E-mail</label>
-              <input type="text" id="email" name="email" required>
-              <label for="subject">Message</label>
-              <textarea id="subject" name="subject" style="height:170px" required></textarea>
-              <input type="submit" value="S U B M I T">
+              <div class="field">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter your first name"/>
+                <small></small>
+              </div>
+              <div class="field">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter your surname"/>
+                <small></small>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email address"/>
+                <small></small>
+              </div>
+              <div class="field">
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="Write something here.."></textarea>
+                <small></small>
+              </div>
+              <div class="field">
+                <input type="submit" value="S U B M I T"/>
+              </div>
             </form>
           </div>
         </div>
+      </article>
     </div>
-    </article>
-
-    <img id="qr" src="../img/qr-code.png" alt="QR Code">
+    
+    <img id="qr" src="../media/img/qr-code.png" alt="QR Code">
     <footer>
       <p>All Rights Reserved &copy; 2022</p>
       <p>Designed and Built by KC Marie Arce</p>
     </footer>
   </main>
-  <script src="../js/main.js"></script>
+  <script src="../js/contact.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@
   --theme-gray: #8892B0;
   --theme-white: #fff;
   --green-tint: rgba(100, 255, 218, 0.1);
+  --theme-error: #dc3545;
 }
 
 * {
@@ -326,11 +327,30 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-form>label {
+.field {
+	margin-bottom: 0.75rem;
+}
+
+small {
+  font-size: smaller;
+  color: var(--theme-error);
+}
+
+input::placeholder, textarea::placeholder {
+	color: var(--theme-gray);
+}
+
+form>.field>label {
   color: var(--theme-lightgray)
 }
 
-form>input[type=text], textarea {
+input.error,
+textarea.error,
+select.error {
+	border-color: var(--theme-error) !important;
+}
+
+form>.field>input[type=text], textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -341,20 +361,17 @@ form>input[type=text], textarea {
   color: var(--theme-white)
 }
 
-form>input[type=submit] {
+textarea {
+  height: 150px;
+}
+
+form>.field>input[type=submit] {
   margin-top: 25px;
 }
 
 input:focus, textarea:focus, select:focus {
   outline: none;
   background-color: var(--green-tint) !important;
-}
-
-input:-webkit-autofill,
-textarea:-webkit-autofill,
-select:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px var(--green-tint) inset !important;
-  -webkit-text-fill-color: var(--theme-navy) !important;
 }
 
 .container {
@@ -480,7 +497,10 @@ ul.skill-list li {
 /* gallery end */
 
 /* Interests style */
-section {
+div#content1,
+div#content2,
+div#content3,
+div#content4 {
   display: none;
   padding: 20px 0 0;
   border-top: 1px solid rgba(255, 255, 255, .25);
@@ -505,7 +525,7 @@ section {
 
 label:before {
   font-family: fontawesome;
-  font-weight: thin;
+  font-weight: normal;
   margin-right: 10px;
 }
 
@@ -888,7 +908,6 @@ input:checked+label {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   display: flex;
   justify-content: center;
@@ -948,4 +967,32 @@ img#qr {
   right: 25px;
   bottom: 15px;
   width: 75px;
+}
+
+/* audio player */
+.player {
+  position: relative;
+  width: 250px;
+  background: #f1f3f4;
+  box-shadow: 0 50px 80px rgba(0, 0, 0, 0.25);
+}
+
+.player .imgbx {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+.player .imgbx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.player audio {
+  width: 100%;
+  outline: none;
 }
