@@ -967,7 +967,6 @@ img#qr {
   bottom: 15px;
   width: 75px;
   z-index: 15;
-  display: none !important;
 }
 
 /* audio player */

@@ -75,3 +75,4 @@ function showSlide(n) {
   slides[slideIndex - 1].style.display = 'block';
   modalPreviews[slideIndex - 1].className += ' active';
 }
+
